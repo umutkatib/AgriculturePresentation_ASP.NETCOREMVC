@@ -1,7 +1,7 @@
 # AgriculturePresentation
 
-### I used ASP.NET Core MVC 5.0 this web project.
-### This project built using N Tier Architecture.
+###### I used ASP.NET Core MVC 5.0 this web project.
+###### This project built using N Tier Architecture.
 ### There is a homepage for normal users(not authenticated).
 ### There is a admin panel for admins
 ### Admins can insert, uptade, delete in homepage's datas.
