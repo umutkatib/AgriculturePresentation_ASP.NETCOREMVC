@@ -1,0 +1,47 @@
+﻿@model EntityLayer.Concrete.Address
+
+@{
+    ViewData["Title"] = "EditAddress";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Adress Kaydı Güncelleme</h4>
+            <form method="post" class="forms-sample">
+                <div class="form-group">
+                    @Html.HiddenFor(x => x.AddressID)
+                    <label for="Title">Açıklama - 1</label>
+                    <span asp-validation-for="Description1" class="text-danger"></span>
+                    <input type="text" class="form-control" asp-for="Description1">
+                </div>
+                <div class="form-group">
+                    <label for="Title">Açıklama - 2</label>
+                    <span asp-validation-for="Description2" class="text-danger"></span>
+                    <input type="text" class="form-control" asp-for="Description2">
+                </div>
+                <div class="form-group">
+                    <label for="Title">Açıklama - 3</label>
+                    <span asp-validation-for="Description3" class="text-danger"></span>
+                    <input type="text" class="form-control" asp-for="Description3">
+                </div>
+                <div class="form-group">
+                    <label for="Title">Açıklama - 4</label>
+                    <span asp-validation-for="Description4" class="text-danger"></span>
+                    <input type="text" class="form-control" asp-for="Description4">
+                </div>
+
+                <div class="form-group">
+                    <label for="Title">Harita Konumu</label>
+                    <span asp-validation-for="MapInfo" class="text-danger"></span>
+                    <input type="text" class="form-control" asp-for="MapInfo">
+                </div>
+
+                <button type="submit" class="btn btn-outline-success me-3">Değişiklikleri Kaydet</button>
+                <a href="/Address/Index" class="btn btn-outline-primary">Adres Listesi</a>
+            </form>
+        </div>
+    </div>
+</div>
+

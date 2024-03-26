@@ -1,0 +1,55 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\MajesticAdmin-Free-Bootstrap-Admin-Template-master\.DS_Store" />
+    <None Include="wwwroot\MajesticAdmin-Free-Bootstrap-Admin-Template-master\template\.DS_Store" />
+    <None Include="wwwroot\MajesticAdmin-Free-Bootstrap-Admin-Template-master\template\documentation\.DS_Store" />
+    <None Include="wwwroot\MajesticAdmin-Free-Bootstrap-Admin-Template-master\template\fonts\.DS_Store" />
+    <None Include="wwwroot\MajesticAdmin-Free-Bootstrap-Admin-Template-master\template\fonts\Roboto\.DS_Store" />
+    <None Include="wwwroot\MajesticAdmin-Free-Bootstrap-Admin-Template-master\template\images\.DS_Store" />
+    <None Include="wwwroot\MajesticAdmin-Free-Bootstrap-Admin-Template-master\template\images\auth\.DS_Store" />
+    <None Include="wwwroot\MajesticAdmin-Free-Bootstrap-Admin-Template-master\template\images\faces\.DS_Store" />
+    <None Include="wwwroot\MajesticAdmin-Free-Bootstrap-Admin-Template-master\template\js\.DS_Store" />
+    <None Include="wwwroot\MajesticAdmin-Free-Bootstrap-Admin-Template-master\template\pages\.DS_Store" />
+    <None Include="wwwroot\MajesticAdmin-Free-Bootstrap-Admin-Template-master\template\pages\charts\.DS_Store" />
+    <None Include="wwwroot\MajesticAdmin-Free-Bootstrap-Admin-Template-master\template\pages\forms\.DS_Store" />
+    <None Include="wwwroot\MajesticAdmin-Free-Bootstrap-Admin-Template-master\template\pages\icons\.DS_Store" />
+    <None Include="wwwroot\MajesticAdmin-Free-Bootstrap-Admin-Template-master\template\pages\samples\.DS_Store" />
+    <None Include="wwwroot\MajesticAdmin-Free-Bootstrap-Admin-Template-master\template\pages\tables\.DS_Store" />
+    <None Include="wwwroot\MajesticAdmin-Free-Bootstrap-Admin-Template-master\template\pages\ui-features\.DS_Store" />
+    <None Include="wwwroot\MajesticAdmin-Free-Bootstrap-Admin-Template-master\template\scss\.DS_Store" />
+    <None Include="wwwroot\MajesticAdmin-Free-Bootstrap-Admin-Template-master\template\scss\components\.DS_Store" />
+    <None Include="wwwroot\MajesticAdmin-Free-Bootstrap-Admin-Template-master\template\scss\mixins\.DS_Store" />
+    <None Include="wwwroot\MajesticAdmin-Free-Bootstrap-Admin-Template-master\template\vendors\.DS_Store" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ClosedXML" Version="0.102.2" />
+    <PackageReference Include="EPPlus" Version="6.0.8" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.13">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.13">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj" />
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj" />
+    <ProjectReference Include="..\EntityLayer\EntityLayer.csproj" />
+  </ItemGroup>
+
+</Project>

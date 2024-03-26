@@ -1,0 +1,32 @@
+﻿@model EntityLayer.Concrete.Announcement
+
+@{
+    ViewData["Title"] = "EditAnnouncement";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Duyuru Kaydı Güncelleme</h4>
+            <form method="post" class="forms-sample">
+                @Html.HiddenFor(x => x.AnnouncementID)
+                <div class="form-group">
+                    <label for="Title">Başlık</label>
+                    <input type="text" class="form-control" placeholder="Bir başlık giriniz..." asp-for="Title">
+                </div>
+                <div class="form-group">
+                    <label for="Title">Tarih</label>
+                    <input type="date" class="form-control" placeholder="Bir başlık giriniz..." asp-for="Date">
+                </div>
+                <div class="form-group">
+                    <label for="Description">Açıklama</label>
+                    <textarea cols="30" rows="5" asp-for="Description" class="form-control" placeholder="Bir açıklama giriniz..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-outline-success me-3">Değişiklikleri Kaydet</button>
+                <a href="/Announcement/Index" class="btn btn-outline-primary">Duyuru Listesi</a>
+            </form>
+        </div>
+    </div>
+</div>
+

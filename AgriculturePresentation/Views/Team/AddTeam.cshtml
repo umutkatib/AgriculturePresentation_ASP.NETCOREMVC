@@ -1,0 +1,50 @@
+﻿@model EntityLayer.Concrete.Team
+@{
+    ViewData["Title"] = "AddTeam";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Yeni Personel Kaydı</h4>
+            <form method="post" class="forms-sample">
+                <div class="form-group">
+                    <label for="Title">Ad Soyad</label>
+                    <span asp-validation-for="PersonName" class="text-danger"></span>
+                    <input type="text" class="form-control" asp-for="PersonName">
+                </div>
+                <div class="form-group">
+                    <label for="Image">Görev</label>
+                    <span asp-validation-for="Title" class="text-danger"></span>
+                    <input type="text" class="form-control" asp-for="Title">
+                </div>
+                <div class="form-group">
+                    <label for="Image">Görsel Yolu</label>
+                    <span asp-validation-for="ImageUrl" class="text-danger"></span>
+                    <input type="text" class="form-control" asp-for="ImageUrl">
+                </div>
+                <div class="form-group">
+                    <label for="Image">Facebook</label>
+                    <input type="text" class="form-control" asp-for="FacebookUrl">
+                </div>
+                <div class="form-group">
+                    <label for="Image">Instagram</label>
+                    <input type="text" class="form-control" asp-for="InstagramUrl">
+                </div>
+                <div class="form-group">
+                    <label for="Image">Twitter</label>
+                    <input type="text" class="form-control" asp-for="TwitterUrl">
+                </div>
+                <div class="form-group">
+                    <label for="Image">Kişisel Web Sitesi</label>
+                    <input type="text" class="form-control" asp-for="WebSiteUrl">
+                </div>
+
+                <button type="submit" class="btn btn-outline-success me-3">Değişiklikleri Kaydet</button>
+                <a href="/Team/Index" class="btn btn-outline-primary">Personel Listesi</a>
+            </form>
+        </div>
+    </div>
+</div>
+
