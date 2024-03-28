@@ -53,7 +53,6 @@ namespace AgriculturePresentation.Controllers
         {
             IdentityUser identityUser = new IdentityUser()
             {
-                Id = "1",
                 UserName = registerViewModel.userName,
                 Email = registerViewModel.mail
             };
@@ -74,6 +73,12 @@ namespace AgriculturePresentation.Controllers
                 }
             }
             return View(registerViewModel);
+        }
+
+        public async Task<IActionResult> LogOut()
+        {
+            await _signInManager.SignOutAsync();
+            return RedirectToAction("Index", "Login");
         }
     }
 }
